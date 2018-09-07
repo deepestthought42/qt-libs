@@ -39,7 +39,8 @@
     "QtXml"
     "QtXmlPatterns"
     "QtWebKit"
-    "phonon"))
+    "phonon"
+    "QCustomPlot"))
 
 (defclass qt4 (locally-available-library github-library checksummed-library)
   ()

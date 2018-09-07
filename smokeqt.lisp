@@ -8,7 +8,11 @@
 
 (defclass smokeqt (cmake-build-library github-library checksummed-library)
   ((smokegen :initarg :smokegen :initform (make-instance 'smokegen) :accessor smokegen))
-  (:default-initargs :tag "qt-libs2.0.1"))
+  (:default-initargs
+   :tag "dt/qt3"
+   :url "https://github.com/deepestthought42/smokeqt"))
+
+
 
 (defmethod cmake-flags ((library smokeqt))
   (list* "-DCMAKE_BUILD_TYPE=Release"

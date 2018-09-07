@@ -268,4 +268,7 @@
         :library-files ("QtXmlPatterns" "smokeqtxmlpatterns"))
        (qtxml
         :depends-on (:qtcore)
-        :library-files ("QtXml" "smokeqtxml")))))
+        :library-files ("QtXml" "smokeqtxml"))
+       (qcustomplot
+        :depends-on (:qtcore :qtgui)
+        :library-files ("smokeqcustomplot")))))
